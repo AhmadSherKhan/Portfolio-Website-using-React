@@ -1,0 +1,82 @@
+.portfolio {
+  margin: 0 4rem;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio ul li {
+  margin-left: 1.2rem;
+}
+.portfolio button {
+  border: 0;
+  background: none;
+  color: var(--main-color-1);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+.portfolio-cards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+.p-cards {
+  border-bottom: 8px;
+  width: 30.33%;
+  border-radius: 8px;
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+
+.p-cards img {
+  padding: 0.3rem;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.p-cards img:hover {
+  transform: scale(1.1);
+}
+.p-cards h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--main-color-1);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.4rem 0.2rem;
+  cursor: pointer;
+}
+.p-cards p {
+  color: var(--text-color);
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .p-cards {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .p-cards {
+    width: 90%;
+  }
+}

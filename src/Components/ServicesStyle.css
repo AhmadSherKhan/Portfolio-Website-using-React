@@ -1,0 +1,135 @@
+.bg {
+  background-color: #e8e8e8;
+}
+.services {
+  padding-bottom: 1.5rem;
+  margin: 0 4rem !important;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--main-color-1);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0.5rem 0;
+  padding-top: 2rem;
+  padding-bottom: 0 !important;
+}
+
+.services p {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.services-card {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.s-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(28.33% - 10px);
+  background: #fff;
+  padding: 1rem;
+  text-align: start;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+span.s-icon {
+  cursor: pointer;
+  background: #e8e8e8;
+  padding: 1.4rem 1.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.7rem;
+  color: var(--main-color-1);
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  animation: waterwave 3s linear infinite;
+}
+@keyframes waterwave {
+  0% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+  50% {
+    border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+  }
+  100% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+}
+span.title {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+  color: var(--main-color-dark-1);
+}
+
+span.s-text {
+  color: var(--text-color);
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding-top: 0.4rem;
+}
+.marq i {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  margin-left: 4rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.marq i:hover {
+  transform: translateY(-10px);
+}
+.fa-html5 {
+  color: orangered;
+}
+.fa-css3-alt {
+  color: var(--main-color-1);
+}
+.fa-square-js {
+  color: rgb(255, 166, 0);
+}
+.fa-react {
+  color: rgb(46, 46, 231);
+}
+.fa-node {
+  color: rgb(22, 133, 22);
+}
+.fa-php {
+  color: rgb(47, 47, 138);
+}
+.fa-laravel {
+  color: rgb(245, 35, 35);
+}
+.fa-vuejs {
+  color: rgb(70, 185, 70);
+}
+@media screen and (max-width: 768px) {
+  .bg {
+    margin-top: 2.4rem;
+  }
+  .s-card {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .bg {
+    margin-top: 3.6rem;
+  }
+  .s-card {
+    width: 100%;
+  }
+}

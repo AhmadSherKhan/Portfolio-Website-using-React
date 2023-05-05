@@ -1,0 +1,127 @@
+.hero {
+  position: relative;
+  margin: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .left-text {
+  padding-right: 8rem;
+}
+
+.hero .image img {
+  width: 100%;
+}
+.graph {
+  position: absolute;
+  top: -20%;
+  right: -9%;
+  width: 50%;
+  z-index: -1;
+}
+
+.sub-heading {
+  color: var(--heading-color);
+  font-size: 0.9rem;
+  border-left: 2px solid var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.heading {
+  font-size: 3.5rem;
+  color: rgb(78, 78, 78);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.heading span {
+  color: var(--main-color-1);
+}
+
+p.text {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin: 0 0 0.8rem 0;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.btn-main {
+  color: #fff;
+  background: var(--main-color-1);
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-main:hover {
+  background: var(--main-color-dark-1) !important;
+}
+.btn-sec {
+  margin-left: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 0.01px solid #e8e8e8;
+  padding: 0.5rem 0.8rem;
+  letter-spacing: 1px;
+  color: var(--main-color-dark-1);
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.btn-sec:hover {
+  border: 0.01px solid var(--main-color-1);
+  transform: translateY(-5px);
+}
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .heading {
+    font-size: 2.6rem;
+  }
+  .hero {
+    margin: 0 2rem;
+  }
+  .graph {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    margin: 0;
+    flex-direction: column;
+  }
+  .hero .left-text {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .hero .image img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
